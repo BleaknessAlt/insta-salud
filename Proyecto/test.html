@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .carta{
+            background-color: gray;
+            height: 300px;
+            width: 200px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            display:flex;
+        }
+        #fila1{
+            display: flex;
+            justify-content: space-around;
+            align-self:flex-start;
+            
+        }
+
+        #fila2{
+            display: flex;
+            align-items: center;
+        }
+        
+        #fila3{
+            display: flex;
+            justify-content: space-between;
+            align-self: self-end;
+        }
+        .diamante{
+            padding-right: 180px;
+            justify-content:space-between;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="carta">
+      <div id="fila1">
+        <div class="diamante">1</div>
+        <div class="diamante">4</div>
+      </div>
+      <div id="fila2">
+        <div class="diamante">3</div>
+      </div>
+      <div id="fila3">
+        <div class="diamante">2</div>
+        <div class="diamante">5</div>
+      </div>
+    </div>
+  </body>
+</html>
