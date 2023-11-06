@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/insta-salud/node_modules
+/insta-salud/.pnp
+/insta-salud/.pnp.js
+
+# testing
+/insta-salud/coverage
+
+# production
+/insta-salud/build
+
+# misc
+/insta-salud/.DS_Store
+/insta-salud/.env.local
+/insta-salud/.env.development.local
+/insta-salud/.env.test.local
+/insta-salud/.env.production.local
+
+/insta-salud/npm-debug.log*
+/insta-salud/yarn-debug.log*
+/insta-salud/yarn-error.log*
