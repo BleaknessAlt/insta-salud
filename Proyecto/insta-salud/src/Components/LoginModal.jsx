@@ -3,11 +3,7 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-function LoginModal(visible) {
-
-
-    const handleClose = () => {};
-    
+function LoginModal({visible, handleClose}) {
     return (
         <>
             <Modal show={visible} onHide={handleClose}>
@@ -31,7 +27,9 @@ function LoginModal(visible) {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>Registrarse</Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Registrarse
+                    </Button>
                     <Button variant="secondary" onClick={handleClose}>
                         Cancelar
                     </Button>
