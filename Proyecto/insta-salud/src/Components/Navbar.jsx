@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import InstaSaludIcon from "../assets/icon.svg";
 import ToggleTheme from "./ToggleTheme";
 import LoginModal from "./LoginModal";
 import { useState } from "react";
@@ -19,9 +20,9 @@ function InstaSaludNavbar() {
     return (
         <>
             <LoginModal visible={show} handleClose={handleModalHide}></LoginModal>
-            <Navbar expand="lg" className="bg-body-tertiary navbar">
+            <Navbar expand="lg" className="bg-body-tertiary general-background">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand className="logo" href="#home"><img src={InstaSaludIcon} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

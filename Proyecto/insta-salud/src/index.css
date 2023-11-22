@@ -1,4 +1,40 @@
+.navbar{
+    font-size: large;
+    font-weight: bold;
+}
 
-.navbar {
+
+.general-background {
     background-color: #4caf50 !important;
+}
+
+.modal-title {
+    background-color: #4caf50 !important;
+    border-bottom: none;
+}
+.modal-body {
+    background-color: #4caf50 !important;
+    border-top: none;
+}
+
+.modal-body input  {
+    background-color: #7ebc80 !important;
+    color: white;
+}
+
+.modal-footer{
+    border-color: black !important;
+    background-color: #7ebc80;
+}
+
+.me-auto {
+    margin-top: 2px;
+}
+
+.test {
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 10vh;
 }

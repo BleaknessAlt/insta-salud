@@ -16,8 +16,9 @@ export function ToggleTheme() {
     };
 
     return (
-        <div>
+        <div className="test">
             <FormCheck // prettier-ignore
+                className="test" 
                 type="switch"
                 label={displayTheme}
                 onChange={toggleTheme}
