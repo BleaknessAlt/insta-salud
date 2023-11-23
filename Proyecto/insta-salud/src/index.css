@@ -1,40 +1,110 @@
-.navbar{
-    font-size: large;
-    font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+html{
+        font-family: "Lato", sans-serif;
+
 }
 
+.navbar {
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-.general-background {
+.general-background, .dropdown-menu {
     background-color: #4caf50 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #7ebc80;
 }
 
 .modal-title {
     background-color: #4caf50 !important;
     border-bottom: none;
 }
+
 .modal-body {
     background-color: #4caf50 !important;
     border-top: none;
 }
 
-.modal-body input  {
+.modal-body input {
     background-color: #7ebc80 !important;
     color: white;
 }
 
-.modal-footer{
+.modal-footer {
     border-color: black !important;
     background-color: #7ebc80;
 }
 
-.me-auto {
-    margin-top: 2px;
+.navbar-btn:hover {
+    color: #fff;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
 }
 
-.test {
-    margin-top: 5px;
+.btn-primary {
+    border-color: #ae142a;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 135px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.me-auto {
+    margin-top: 2px;
+    line-height: 1em;
 }
 
 .logo img {
-    width: 10vh;
+    width: 5em;
 }

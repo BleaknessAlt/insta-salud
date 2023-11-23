@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button"
 import NavDropdown from "react-bootstrap/NavDropdown";
 import InstaSaludIcon from "../assets/icon.svg";
 import ToggleTheme from "./ToggleTheme";
@@ -26,12 +27,12 @@ function InstaSaludNavbar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Inicio</Nav.Link>
-                            <Nav.Link href="#especialidades">Especialidades</Nav.Link>
-                            <Nav.Link href="#especialistas">Especialistas</Nav.Link>
-                            <Nav.Link href="#link">Gestión de Citas</Nav.Link>
-                            <Nav.Link onClick={handleModalShow}>Iniciar Sesión</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <button className="btn-hover color-5" href="#home">Inicio</button>
+                            <button className="btn-hover color-5" href="#home">Especialidades</button>
+                            <button className="btn-hover color-5" href="#home">Especialistas</button>
+                            <button className="btn-hover color-5" href="#home">Gestión de Citas</button>
+                            <button className="btn-hover color-5" href="#home">Sala de Citas</button>
+                            <NavDropdown title="Información" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
