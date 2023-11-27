@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { FormCheck } from "react-bootstrap";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export function ToggleTheme() {
     const [theme, setTheme] = useState("dark");
-    const [displayTheme, setDisplayTheme] = useState("Modo Claro");
 
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
         applyTheme(theme === "light" ? "Modo Claro" : "Modo Oscuro");
-        setDisplayTheme(theme == "light" ? "Modo Claro" : "Modo Oscuro");
     };
 
     const applyTheme = () => {
@@ -16,16 +15,9 @@ export function ToggleTheme() {
     };
 
     return (
-        <div className="test">
-            <FormCheck // prettier-ignore
-                className="test" 
-                type="switch"
-                label={displayTheme}
-                onChange={toggleTheme}
-                id="toggle_theme"
-            />
-            <label className="" htmlFor="toggle_theme"></label>
-        </div>
+        <>
+            <DarkModeSwitch className="toggleTheme" checked={theme == "dark"} moonColor="black" sunColor="white" onChange={toggleTheme} size={30} />
+        </>
     );
 }
 

@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button"
 import NavDropdown from "react-bootstrap/NavDropdown";
+
 import InstaSaludIcon from "../assets/icon.svg";
 import ToggleTheme from "./ToggleTheme";
 import LoginModal from "./LoginModal";
@@ -32,6 +33,7 @@ function InstaSaludNavbar() {
                             <button className="btn-hover color-5" href="#home">Especialistas</button>
                             <button className="btn-hover color-5" href="#home">Gestión de Citas</button>
                             <button className="btn-hover color-5" href="#home">Sala de Citas</button>
+                            <ToggleTheme></ToggleTheme>
                             <NavDropdown title="Información" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2"></NavDropdown.Item>
@@ -39,7 +41,6 @@ function InstaSaludNavbar() {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4"></NavDropdown.Item>
                             </NavDropdown>
-                            <ToggleTheme></ToggleTheme>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
