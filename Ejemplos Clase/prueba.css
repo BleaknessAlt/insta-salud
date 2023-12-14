@@ -1,0 +1,17 @@
+.layout {
+    height: 310px;
+    width: 310px;
+    background: tomato;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 5px;
+}
+
+.cell{
+    background-color: #c3c3c3;
+    color: #333;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 40px;
+}
